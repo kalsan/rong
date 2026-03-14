@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://isri6n3ongte" path="res://Tile.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://c2f748qrktaga" path="res://UI.tscn" id="5_3mrqo"]
 [ext_resource type="PackedScene" uid="uid://dt6254f4stldn" path="res://Ball.tscn" id="5_t88pq"]
-[ext_resource type="Script" path="res://ball.gd" id="6_r0x5m"]
+[ext_resource type="Script" uid="uid://culpn8sowkdl" path="res://ball.gd" id="6_r0x5m"]
 
 [sub_resource type="PhysicsMaterial" id="3"]
 friction = 0.0

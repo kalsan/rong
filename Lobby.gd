@@ -108,3 +108,5 @@ func _on_server_disconnected():
 	remove_multiplayer_peer()
 	players.clear()
 	server_disconnected.emit()
+	
+	#Fill
