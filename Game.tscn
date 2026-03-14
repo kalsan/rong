@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cj3avtwcxvg27" path="res://sprites/paddle-yellow.svg" id="1"]
 [ext_resource type="Texture2D" uid="uid://s4ngfwxu8s4p" path="res://sprites/paddle-red.svg" id="2"]
 [ext_resource type="Script" uid="uid://dps0tvvyg7kva" path="res://Game.gd" id="3"]
-[ext_resource type="PackedScene" path="res://Tile.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://isri6n3ongte" path="res://Tile.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://dt6254f4stldn" path="res://Ball.tscn" id="5_t88pq"]
 [ext_resource type="Script" uid="uid://culpn8sowkdl" path="res://ball.gd" id="6_r0x5m"]
 

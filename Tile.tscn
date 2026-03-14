@@ -1,17 +1,18 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene format=3 uid="uid://isri6n3ongte"]
 
-[ext_resource path="res://sprites/hexagon.svg" type="Texture2D" id=1]
-[ext_resource path="res://Tile.gd" type="Script" id=2]
+[ext_resource type="Texture2D" uid="uid://b1fnn4h45wv20" path="res://sprites/hexagon.svg" id="1"]
+[ext_resource type="Script" uid="uid://h2f8glbvxytt" path="res://Tile.gd" id="2"]
 
-[node name="Tile" type="RigidBody2D"]
-position = Vector2( 526, 294 )
+[node name="Tile" type="RigidBody2D" unique_id=684728778]
+position = Vector2(526, 294)
 gravity_scale = 0.0
 linear_damp = 2.0
-script = ExtResource( 2 )
+script = ExtResource("2")
 
-[node name="Hexagon" type="Sprite2D" parent="."]
-scale = Vector2( 0.302548, 0.302548 )
-texture = ExtResource( 1 )
+[node name="Hexagon" type="Sprite2D" parent="." unique_id=1778684935]
+scale = Vector2(0.15732495, 0.15732495)
+texture = ExtResource("1")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array( 0, -55, 47, -28, 47, 27, 0, 55, -47, 27, -47, -27 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1538338451]
+scale = Vector2(0.52, 0.52)
+polygon = PackedVector2Array(0, -55, 47, -28, 47, 27, 0, 55, -47, 27, -47, -27)

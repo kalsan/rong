@@ -11,6 +11,7 @@ var tile_scene = preload("res://Tile.tscn")
 func _ready():
 	for i in range(15):
 		var tile = tile_scene.instantiate()
+		tile.global_position = Vector2(0, 0)
 		add_child(tile)
 
 
