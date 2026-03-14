@@ -10,7 +10,7 @@ var tile_scene = preload("res://Tile.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for i in range(15):
-		var tile = tile_scene.instance()
+		var tile = tile_scene.instantiate()
 		add_child(tile)
 
 

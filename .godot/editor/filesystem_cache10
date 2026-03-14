@@ -1,0 +1,12 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1773493465
+default_env.tres::Environment::-1::1773493447::0::1::::<><><>0<>0<><>::
+Game.gd::GDScript::8250806496657203474::1773493447::0::1::::<>Node2D<><>0<>0<><>::
+Game.tscn::PackedScene::-1::1773493447::0::1::::<><><>0<>0<><>::res://sprites/paddle-yellow.svg<>res://sprites/paddle-red.svg<>res://Game.gd<>res://Tile.tscn
+icon.png::CompressedTexture2D::7028150518425670267::1773483403::1773493465::1::::<><><>0<>0<>435f43bbfc0f3ceb3b87b6c99805e8c7<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+Tile.gd::GDScript::547422953195914849::1773493447::0::1::::<>RigidBody2D<><>0<>0<><>::
+Tile.tscn::PackedScene::-1::1773493447::0::1::::<><><>0<>0<><>::res://sprites/hexagon.svg<>res://Tile.gd
+::res://sprites/::1773489224
+hexagon.svg::CompressedTexture2D::4222466578628361971::1773489224::1773493465::1::::<><><>0<>0<>e6aed0c60b3b01e15e05fd21b92cd0e0<>res://.godot/imported/hexagon.svg-0bafc5197b1fcd4338ef4452aa3d6c8d.ctex::
+paddle-red.svg::CompressedTexture2D::1324066473697218009::1773486065::1773493465::1::::<><><>0<>0<>cdab1a22e9bd8417ebdf398669263dfc<>res://.godot/imported/paddle-red.svg-2d896b615a326f87ca0605be3bd5d0e3.ctex::
+paddle-yellow.svg::CompressedTexture2D::5462382070965959846::1773485530::1773493465::1::::<><><>0<>0<>92443561f12c1b6b3d54d58ac3bea23e<>res://.godot/imported/paddle-yellow.svg-5f79cc257615f3638b70733f18960c23.ctex::
