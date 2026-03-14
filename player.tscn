@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d2vwpbjx8ek5p"]
+
+[ext_resource type="Texture2D" uid="uid://cj3avtwcxvg27" path="res://sprites/paddle-yellow.svg" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape2D" id="1"]
+radius = 41.0
+height = 324.0
+
+[node name="Player Yellow" type="CharacterBody2D" unique_id=1738476806]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1592818622]
+position = Vector2(2, 2)
+rotation = 1.5708
+shape = SubResource("1")
+
+[node name="Paddle" type="Sprite2D" parent="." unique_id=1508377013]
+position = Vector2(-1, 0)
+texture = ExtResource("1_4flbx")

@@ -1,18 +1,11 @@
 [gd_scene format=3 uid="uid://c1fii8iymprr0"]
 
-[ext_resource type="Texture2D" uid="uid://cj3avtwcxvg27" path="res://sprites/paddle-yellow.svg" id="1"]
-[ext_resource type="Texture2D" uid="uid://s4ngfwxu8s4p" path="res://sprites/paddle-red.svg" id="2"]
+[ext_resource type="PackedScene" uid="uid://d2vwpbjx8ek5p" path="res://player.tscn" id="2_sb48q"]
 [ext_resource type="Script" uid="uid://dps0tvvyg7kva" path="res://Game.gd" id="3"]
 [ext_resource type="PackedScene" uid="uid://isri6n3ongte" path="res://Tile.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://dt6254f4stldn" path="res://Ball.tscn" id="5_t88pq"]
 [ext_resource type="Script" uid="uid://culpn8sowkdl" path="res://ball.gd" id="6_r0x5m"]
-
-[sub_resource type="PhysicsMaterial" id="2"]
-bounce = 0.8
-
-[sub_resource type="CapsuleShape2D" id="1"]
-radius = 41.0
-height = 324.0
+[ext_resource type="Script" uid="uid://7moqg4apr5ai" path="res://player.gd" id="3_t88pq"]
 
 [sub_resource type="PhysicsMaterial" id="3"]
 friction = 0.0
@@ -20,33 +13,9 @@ friction = 0.0
 [node name="Game" type="Node2D" unique_id=2141739472]
 script = ExtResource("3")
 
-[node name="Player Yellow" type="RigidBody2D" parent="." unique_id=1276337044]
+[node name="Player" parent="." unique_id=443882243 instance=ExtResource("2_sb48q")]
 position = Vector2(22, -381)
-physics_material_override = SubResource("2")
-gravity_scale = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Yellow" unique_id=1134310967]
-position = Vector2(2, 2)
-rotation = 1.5708
-shape = SubResource("1")
-
-[node name="Paddle" type="Sprite2D" parent="Player Yellow" unique_id=969049387]
-position = Vector2(-1, 0)
-texture = ExtResource("1")
-
-[node name="Player Red" type="RigidBody2D" parent="." unique_id=1460967519]
-position = Vector2(-6, 359)
-physics_material_override = SubResource("2")
-gravity_scale = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Red" unique_id=379185627]
-position = Vector2(2, 2)
-rotation = 1.5708
-shape = SubResource("1")
-
-[node name="Paddle" type="Sprite2D" parent="Player Red" unique_id=2134031098]
-position = Vector2(-1, 0)
-texture = ExtResource("2")
+script = ExtResource("3_t88pq")
 
 [node name="Tile" parent="." unique_id=1139083653 instance=ExtResource("4")]
 position = Vector2(-17, -72)
