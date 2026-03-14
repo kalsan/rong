@@ -1,0 +1,4 @@
+[gd_resource type="SystemFont" format=3 uid="uid://l30hlo3jh4fm"]
+
+[resource]
+font_names = PackedStringArray("Hurmit Nerd Font Mono")

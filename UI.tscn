@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c2f748qrktaga"]
+
+[ext_resource type="SystemFont" uid="uid://l30hlo3jh4fm" path="res://Hurmit_Nerd_Font.tres" id="1_b3bc3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3b2b5"]
+font = ExtResource("1_b3bc3")
+font_size = 60
+
+[node name="UI" type="Control" unique_id=847617337]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1.0
+offset_right = 475.0
+offset_bottom = 372.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1183114578]
+layout_mode = 0
+offset_right = 1204.0
+offset_bottom = 901.0
+color = Color(0, 0, 0, 0.11764706)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1545727378]
+layout_mode = 0
+offset_right = 1203.0
+offset_bottom = 144.0
+text = "RoNG"
+label_settings = SubResource("LabelSettings_3b2b5")
+horizontal_alignment = 1
+vertical_alignment = 1
