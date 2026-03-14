@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dt6254f4stldn"]
+
+[ext_resource type="Texture2D" uid="uid://bdklqdhe7s4jp" path="res://sprites/ball-purple.svg" id="1_gk6bx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t88pq"]
+radius = 23.021729
+
+[node name="Ball" type="RigidBody2D" unique_id=252932968]
+gravity_scale = 0.0
+
+[node name="BallPurple" type="Sprite2D" parent="." unique_id=82195244]
+position = Vector2(-164, 222)
+scale = Vector2(0.27710843, 0.27710843)
+texture = ExtResource("1_gk6bx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1754630819]
+position = Vector2(-164, 222)
+shape = SubResource("CircleShape2D_t88pq")
