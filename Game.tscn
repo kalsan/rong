@@ -15,7 +15,7 @@ height = 324.0
 [sub_resource type="PhysicsMaterial" id="3"]
 friction = 0.0
 
-[node name="Game" type="Node2D" unique_id=738891606]
+[node name="Game" type="Camera2D" unique_id=1471625203]
 position = Vector2(2, 0)
 script = ExtResource("3")
 

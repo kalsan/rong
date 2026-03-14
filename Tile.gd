@@ -11,6 +11,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var center =  get_viewport_rect().size / 2.0
-	var direction = (center - position).normalized()
+	var direction = (Vector2(0,0) - position).normalized()
 	apply_central_impulse(direction * FORCE_STRENGTH)
