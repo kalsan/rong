@@ -15,12 +15,11 @@ height = 324.0
 [sub_resource type="PhysicsMaterial" id="3"]
 friction = 0.0
 
-[node name="Game" type="Camera2D" unique_id=1471625203]
-position = Vector2(2, 0)
+[node name="Game" type="Node2D" unique_id=2141739472]
 script = ExtResource("3")
 
 [node name="Player Yellow" type="RigidBody2D" parent="." unique_id=1276337044]
-position = Vector2(569, 73)
+position = Vector2(22, -381)
 physics_material_override = SubResource("2")
 gravity_scale = 0.0
 
@@ -34,7 +33,7 @@ position = Vector2(-1, 0)
 texture = ExtResource("1")
 
 [node name="Player Red" type="RigidBody2D" parent="." unique_id=1460967519]
-position = Vector2(541, 813)
+position = Vector2(-6, 359)
 physics_material_override = SubResource("2")
 gravity_scale = 0.0
 
@@ -48,5 +47,7 @@ position = Vector2(-1, 0)
 texture = ExtResource("2")
 
 [node name="Tile" parent="." unique_id=1139083653 instance=ExtResource("4")]
-position = Vector2(530, 382)
+position = Vector2(-17, -72)
 physics_material_override = SubResource("3")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1573726832]
