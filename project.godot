@@ -15,6 +15,10 @@ run/main_scene="res://Game.tscn"
 config/features=PackedStringArray("4.6")
 config/icon="res://icon.png"
 
+[autoload]
+
+Lobby="*uid://cd8ne8gxtfh8f"
+
 [display]
 
 window/size/viewport_width=1200
@@ -31,7 +35,7 @@ common/drop_mouse_on_gui_input_disabled=true
 [importer_defaults]
 
 animation_library={
-&"import_script/path": "uid://cd8ne8gxtfh8f"
+&"animation/fps": 60.0
 }
 
 [physics]
