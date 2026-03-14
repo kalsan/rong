@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://dt6254f4stldn"]
 
 [ext_resource type="Texture2D" uid="uid://bdklqdhe7s4jp" path="res://sprites/ball-purple.svg" id="1_gk6bx"]
+[ext_resource type="AudioStream" uid="uid://coth16bswbqf3" path="res://sounds/harp/3.ogg" id="2_lww6v"]
+[ext_resource type="AudioStream" uid="uid://cbjclval2h2t7" path="res://sounds/harp/1.ogg" id="3_3tj6u"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t88pq"]
 radius = 23.021729
 
 [node name="Ball" type="RigidBody2D" unique_id=252932968]
 gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
 
 [node name="BallPurple" type="Sprite2D" parent="." unique_id=82195244]
 position = Vector2(-164, 222)
@@ -16,3 +20,9 @@ texture = ExtResource("1_gk6bx")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1754630819]
 position = Vector2(-164, 222)
 shape = SubResource("CircleShape2D_t88pq")
+
+[node name="CollisionAudio" type="AudioStreamPlayer" parent="." unique_id=1909796612]
+stream = ExtResource("2_lww6v")
+
+[node name="BounceAudio" type="AudioStreamPlayer" parent="." unique_id=202946806]
+stream = ExtResource("3_3tj6u")

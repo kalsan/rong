@@ -11,11 +11,11 @@ var tile_scene = preload("res://Tile.tscn")
 func _ready():
 	# Multiplayer
 	Lobby.player_loaded.rpc_id(1) # Tell the server that this peer has loaded.
-	
+
 	for i in range(15):
 		var tile = tile_scene.instantiate()
 		tile.global_position = Vector2(0, 0)
-		add_child(tile)
+		add_child(tile, true)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

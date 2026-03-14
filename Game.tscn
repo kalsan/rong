@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://d2vwpbjx8ek5p" path="res://player.tscn" id="2_sb48q"]
 [ext_resource type="Script" uid="uid://dps0tvvyg7kva" path="res://Game.gd" id="3"]
+[ext_resource type="Script" path="res://player.gd" id="3_t88pq"]
 [ext_resource type="PackedScene" uid="uid://isri6n3ongte" path="res://Tile.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://dt6254f4stldn" path="res://Ball.tscn" id="5_t88pq"]
 [ext_resource type="Script" uid="uid://culpn8sowkdl" path="res://ball.gd" id="6_r0x5m"]
-[ext_resource type="Script" uid="uid://7moqg4apr5ai" path="res://player.gd" id="3_t88pq"]
 
 [sub_resource type="PhysicsMaterial" id="3"]
 friction = 0.0
@@ -26,3 +26,5 @@ physics_material_override = SubResource("3")
 [node name="Ball" parent="." unique_id=252932968 instance=ExtResource("5_t88pq")]
 mass = 1000.0
 script = ExtResource("6_r0x5m")
+
+[connection signal="body_entered" from="Ball" to="Ball" method="_on_body_entered"]

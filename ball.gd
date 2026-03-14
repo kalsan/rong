@@ -9,3 +9,10 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_body_entered(body: Node) -> void:
+	if body.name.begins_with("Tile"):
+		$CollisionAudio.play()
+	else:
+		$BounceAudio.play()
